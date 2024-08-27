@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: calc(100vh - 8rem);
+  background: linear-gradient(to right, #ddc2a5 0%, #ddc2a5 50%, #234e70 100%);
+  padding: 0 1rem;
+}
+
+.img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.diff {
+  animation: colorchange 2s infinite alternate;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    color: #FF7F7F;
+  }
+
+  20% {
+    color: #E38E95;
+  }
+
+  40% {
+    color: #C79DAC;
+  }
+
+  60% {
+    color: #ACADC2;
+  }
+
+  80% {
+    color: #09A6F3;
+  }
+
+  100% {
+    color: #0A85ED;
+  }
+}
